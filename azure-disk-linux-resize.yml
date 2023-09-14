@@ -27,13 +27,13 @@
         allocated: no
     
     
-    #- name: "Increase disk size of Virtual Machine"
-     # azure_rm_managed_disk:
-      #  name: "{{ vm_name }}"
-       # resource_group: "{{ resource_group_name }}"
-        #disk_size_gb: "{{ azure_disk_size }}"
-        #managed_by: "{{ vm_name }}"
-        #location: "centralindia"
+    - name: "Increase disk size of Virtual Machine"
+      azure_rm_managed_disk:
+        name: "{{ vm_name }}"
+        resource_group: "{{ resource_group_name }}"
+        disk_size_gb: "{{ azure_disk_size }}"
+        managed_by: "{{ vm_name }}"
+        location: "centralindia"
 
     - name: "Resize and Update the virtual Machine and Start"
       azure_rm_virtualmachine:
