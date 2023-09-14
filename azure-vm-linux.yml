@@ -3,7 +3,8 @@
   hosts: localhost
   vars:
     vm_name: "Test-Ansible"
-    vm_size: "Standard_B1ls"
+    #vm_size: "Standard_B1ls"
+    vm_size: Standard_DS1_v2
     vm_image: "RedHat:RHEL:8-LVM:latest"
     vm_username: "testansible"
     vm_password: "my-password@1234"
