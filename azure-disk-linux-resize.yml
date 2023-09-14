@@ -15,7 +15,8 @@
        admin_pswd: "my-password@1234"
        azure_disk_size: 64
        #vm_size: Small-ExtraLarge
-       vm_size: Standard_DS2_v2
+       vm_size: Standard_DS2_v1
+       location: "centralindia"
     
     tasks:
     
@@ -32,6 +33,7 @@
         resource_group: "{{ resource_group_name }}"
         disk_size_gb: "{{ azure_disk_size }}"
         managed_by: "{{ vm_name }}"
+        location: "centralindia"
 
     - name: "Resize amd Update the virtual Machine and Start"
       azure_rm_virtualmachine:
