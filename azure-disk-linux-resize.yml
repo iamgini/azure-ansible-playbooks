@@ -15,7 +15,7 @@
        admin_pswd: "my-password@1234"
        azure_disk_size: 64
        #vm_size: Small-ExtraLarge
-       vm_size: Standard_DS2_v1
+       vm_size: Standard_DS1_v1
        location: "centralindia"
     
     tasks:
