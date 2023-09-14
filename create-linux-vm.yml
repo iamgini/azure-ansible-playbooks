@@ -12,10 +12,7 @@
     vnet_name: "test-ansible"
     subnet_name: "test-ansible"
     location: "centralindia"
-    subscription_id: b4bc1df5-b15b-4d1b-9970-2782027c3869 
-    tenant: 13be06c7-8853-47b3-ad3f-7456585ec56d
-    client_id: b9253e33-bc2f-4ba7-a9f8-f2dcea64fe9a
-    secret: d1C8Q~jo6Eop_k08VkHoeziJ9gg91ezZyyG-Nb3D
+    
 
   tasks:
     - name: Create a Resource Group
