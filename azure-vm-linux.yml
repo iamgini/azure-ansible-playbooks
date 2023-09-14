@@ -40,7 +40,7 @@
 
     - name: Create a Resource Group
 
-      azure.azcollection.azure_rm_resourcegroup:
+      azure_rm_resourcegroup:
 
         subscription_id: "{{ subscription_id }}"
 
@@ -60,7 +60,7 @@
 
     - name: Create a Virtual Network
 
-      azure.azcollection.azure_rm_virtualnetwork:
+      azure_rm_virtualnetwork:
 
         subscription_id: "{{ subscription_id }}"
 
@@ -82,7 +82,7 @@
 
     - name: Create a subnet
 
-      azure.azcollection.azure_rm_subnet:
+      azure_rm_subnet:
 
         subscription_id: "{{ subscription_id }}"
 
@@ -106,7 +106,7 @@
 
     - name: Create a public IP address
 
-      azure.azcollection.azure_rm_publicipaddress:
+      azure_rm_publicipaddress:
 
         subscription_id: "{{ subscription_id }}"
 
@@ -128,7 +128,7 @@
 
     - name: Create a network security group and configure the security group
 
-      azure.azcollection.azure_rm_securitygroup:
+      azure_rm_securitygroup:
 
         subscription_id: "{{ subscription_id }}"
 
@@ -168,7 +168,7 @@
 
     - name: Create a Virtual Network Interface Card
 
-      azure.azcollection.azure_rm_networkinterface:
+      azure_rm_networkinterface:
 
         subscription_id: "{{ subscription_id }}"
 
@@ -194,7 +194,7 @@
 
     - name: Create a vm_image
 
-      azure.azcollection.azure_rm_virtualmachine:
+      azure_rm_virtualmachine:
 
         subscription_id: "{{ subscription_id }}"
 
