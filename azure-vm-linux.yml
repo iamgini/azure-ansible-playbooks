@@ -26,13 +26,13 @@
 
     location: "centralindia"
 
-    subscription_id: <YOUR SUBSCRIPTION ID>
+   # subscription_id: <YOUR SUBSCRIPTION ID>
 
-    tenant: <YOUR TENANT ID>
+    #tenant: <YOUR TENANT ID>
 
-    client_id: <YOUR CLIENT ID>
+#    client_id: <YOUR CLIENT ID>
 
-    secret: <YOUR SECRET>
+ #   secret: <YOUR SECRET>
 
 
 
