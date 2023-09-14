@@ -40,3 +40,4 @@
         admin_username: "{{ admin_user }}"
         admin_password: "{{ admin_pswd }}"
         started: yes
+...
