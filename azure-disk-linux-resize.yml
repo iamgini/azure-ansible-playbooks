@@ -5,7 +5,7 @@
 # This playbook Designed to execute on azure coud space 
 # Make Sure all connection-related parameters( subscription ID, Client Secret, Tenant ID ) 
 # Use appropriate values for variables which is defined on this playbook 
-
+#
   - name: Change VM size
     hosts: localhost
     vars:
@@ -27,13 +27,13 @@
         allocated: no
     
     
-    - name: "Increase disk size of Virtual Machine"
-      azure_rm_managed_disk:
-        name: "{{ vm_name }}"
-        resource_group: "{{ resource_group_name }}"
-        disk_size_gb: "{{ azure_disk_size }}"
-        managed_by: "{{ vm_name }}"
-        location: "centralindia"
+    #- name: "Increase disk size of Virtual Machine"
+     # azure_rm_managed_disk:
+      #  name: "{{ vm_name }}"
+       # resource_group: "{{ resource_group_name }}"
+        #disk_size_gb: "{{ azure_disk_size }}"
+        #managed_by: "{{ vm_name }}"
+        #location: "centralindia"
 
     - name: "Resize and Update the virtual Machine and Start"
       azure_rm_virtualmachine:
