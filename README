@@ -5,3 +5,4 @@ Create Linux VM with vm_size specification [Standard_DS1_v2] default os_disk siz
 Playbook2:
 Resize VM vm_size specification [Standard_DS2_v2] and os_disk_size of 64G.
 Playbook3:
+Playbook will create two data disk of size 16G and 32G
