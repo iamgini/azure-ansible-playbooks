@@ -40,7 +40,7 @@
         resource_group: "{{ resource_group_name }}"
         name: "{{vm_name}}"
         vm_size: "{{ vm_size }}"
-        disk_size_gb: "40"
+        os_disk_size_gb: "40"
         admin_username: "{{ admin_user }}"
         admin_password: "{{ admin_pswd }}"
         started: yes
