@@ -13,7 +13,7 @@
        vm_name: "Test-Ansible"
        admin_user: testansible
        admin_pswd: "my-password@1234"
-       azure_disk_size: 40
+       azure_disk_size: 64
        vm_size: Small-ExtraLarge
     
     tasks:
