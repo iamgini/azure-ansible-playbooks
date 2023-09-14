@@ -1,5 +1,5 @@
 --- # Get facts for the user
-- name: Create a Virtual Machine on Azure Using Ansible
+- name: Create a VM with OS and multiple data storage accounts
   hosts: localhost
   vars:
     vm_name: "Test-Ansible"
