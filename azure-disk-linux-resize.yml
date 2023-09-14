@@ -13,9 +13,9 @@
        vm_name: "Test-Ansible"
        admin_user: testansible
        admin_pswd: "my-password@1234"
-       azure_disk_size: 64
+       #azure_disk_size: 64
        #vm_size: Small-ExtraLarge
-       vm_size: Standard_DS1_v1
+       vm_size: Standard_DS1_v2
        location: "centralindia"
     
     tasks:
@@ -27,15 +27,15 @@
         allocated: no
     
     
-    - name: "Increase disk size of Virtual Machine"
-      azure_rm_managed_disk:
-        name: "{{ vm_name }}"
-        resource_group: "{{ resource_group_name }}"
-        disk_size_gb: "{{ azure_disk_size }}"
-        managed_by: "{{ vm_name }}"
-        location: "centralindia"
+    #- name: "Increase disk size of Virtual Machine"
+     # azure_rm_managed_disk:
+      #  name: "{{ vm_name }}"
+       # resource_group: "{{ resource_group_name }}"
+        #disk_size_gb: "{{ azure_disk_size }}"
+        #managed_by: "{{ vm_name }}"
+        #location: "centralindia"
 
-    - name: "Resize amd Update the virtual Machine and Start"
+    - name: "Resize and Update the virtual Machine and Start"
       azure_rm_virtualmachine:
         resource_group: "{{ resource_group_name }}"
         name: "{{vm_name}}"
