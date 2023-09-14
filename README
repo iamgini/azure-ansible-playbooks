@@ -1,4 +1,7 @@
 The order of executing the playbook is according to the filename. For example 1-xxx.yml [first],2-xxx.yml[second].......
 
-
-
+Playbook1:
+Create Linux VM with vm_size specification [Standard_DS1_v2] default os_disk size of 30G
+Playbook2:
+Resize VM vm_size specification [Standard_DS2_v2] and os_disk_size of 64G.
+Playbook3:
