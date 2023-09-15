@@ -70,9 +70,12 @@
         admin_username: "{{ vm_username }}"
         admin_password: "{{ vm_password }}"
         image:
-          offer: "CentOS"
-          publisher: "OpenLogic"
-          sku: "7.5"
+          #offer: "CentOS"
+          offer: "centos-lvm"
+          publisher: "openlogic"
+          sku: "7-lvm"
+          #publisher: "OpenLogic"
+          #sku: "7.5"
           version: "latest"
         os_disk_caching: ReadWrite
         os_disk_name: "{{ vm_name }}-os-disk"
