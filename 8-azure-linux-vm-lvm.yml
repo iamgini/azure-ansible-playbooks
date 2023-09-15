@@ -6,15 +6,15 @@
    - name: Print Physical Volume
      command: pvs
      register: apple1
-     debug:
+   - debug:
       var: apple1
    - name: Print Volume Group
      command: vgs
      register: apple2
-     debug:
+   - debug:
       var: apple2
    - name: Print LogicalVolume
      command: lvs
      register: apple3
-     debug:
+   - debug:
       var: apple3
