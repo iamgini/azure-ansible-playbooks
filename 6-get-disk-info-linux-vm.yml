@@ -1,5 +1,5 @@
 #find public ip and input it as value to hosts
-- name: Create a Virtual Machine on Azure Using Ansible
+- name: Get Virtual Machine disk details Using Ansible
   hosts: 20.219.4.80
   tasks:
   
