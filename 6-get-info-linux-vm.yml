@@ -1,18 +1,7 @@
 - name: Create a Virtual Machine on Azure Using Ansible
   hosts: 20.219.4.80
   tasks:
-   - name: Gather facts
-     setup:
-     register: apple
-   - name: print
-     debug:
-      var: apple
-   - name: Display Disk Information
-     debug:
-      var: ansible_facts.devices
-   - name:
-     debug:
-      var: ansible_facts.devices.keys()
+  
    - name: Print the disk size only for sd disks
      debug:
       msg: "{{ ansible_facts.devices[item].size }}"
