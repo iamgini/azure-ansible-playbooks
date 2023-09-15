@@ -1,5 +1,5 @@
 - name: Create a Virtual Machine on Azure Using Ansible
-  hosts: localhost
+  hosts: all
   tasks:
    - name: Gather facts
      setup:
