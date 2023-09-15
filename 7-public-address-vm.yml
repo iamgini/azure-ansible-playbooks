@@ -1,6 +1,6 @@
 
 - name: Create a Virtual Machine on Azure Using Ansible
-  hosts: all
+  hosts: localhost
   vars:
    resource_group: "test-ansible"
   tasks:
