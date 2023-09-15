@@ -4,17 +4,17 @@
   tasks:
   
    - name: Print Physical Volume
-     command: pvs
+     shell: pvs
      register: apple1
    - debug:
       var: apple1
    - name: Print Volume Group
-     command: vgs
+     shell: vgs
      register: apple2
    - debug:
       var: apple2
    - name: Print LogicalVolume
-     command: lvs
+     shell: lvs
      register: apple3
    - debug:
       var: apple3
