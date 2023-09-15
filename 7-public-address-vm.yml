@@ -1,6 +1,8 @@
 
 - name: Create a Virtual Machine on Azure Using Ansible
   hosts: all
+  vars:
+   resource_group: "test-ansible"
   tasks:
    - name: Get facts for all Public IPs within a resource groups
      azure_rm_publicipaddress_info:
