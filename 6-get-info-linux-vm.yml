@@ -6,4 +6,4 @@
      register: apple
    - name: print
      debug:
-      vars: apple
+      var: apple
