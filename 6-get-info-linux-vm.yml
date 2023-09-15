@@ -1,4 +1,5 @@
 - name: Create a Virtual Machine on Azure Using Ansible
+  hosts:
   tasks:
   
    - name: Print the disk size only for sd disks
