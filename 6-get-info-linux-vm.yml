@@ -7,3 +7,9 @@
    - name: print
      debug:
       var: apple
+   - name: Display Disk Information
+     debug:
+      var: ansible_facts.devices
+   - name:
+     debug:
+      var: ansible_facts.devices.keys()
