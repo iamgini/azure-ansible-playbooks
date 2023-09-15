@@ -14,6 +14,6 @@
      debug:
       var: ansible_facts.devices.keys()
    - name: Print the disk size only for sd disks
-     ansible.builtin.debug:
+     debug:
       msg: "{{ ansible_devices[item].size }}"
      loop: "{{ ansible_devices.keys() | map('regex_search', 'sd.*') | select('string') | list }}"
