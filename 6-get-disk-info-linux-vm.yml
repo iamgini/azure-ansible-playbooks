@@ -1,4 +1,4 @@
-#find public ip and input it as value to hosts
+#This Playbook works on dynamic inventory created in controller.Need to choose dynamic inventory
 - name: Get Virtual Machine disk details Using Ansible
   hosts: all
   tasks:
