@@ -13,4 +13,4 @@
      #  publicipaddress: "{{ output_ip_address['publicipaddresses']['ip_address']}}"  
    - name: print public ip
      debug:
-      var: output_ip_address['publicipaddresses']['ip_address']
+      var: output_ip_address
