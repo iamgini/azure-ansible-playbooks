@@ -1,6 +1,6 @@
 
 - name: Get Virtual Machine lvm details Using Ansible
-  hosts: 20.219.4.80
+  hosts: all
   tasks:
   
    - name: Print Physical Volume
