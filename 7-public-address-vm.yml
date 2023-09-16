@@ -9,7 +9,7 @@
       resource_group: "{{ resource_group }}"
      register: output_ip_address
    - name: set public ip address fact
-      set_fact: 
+     set_fact: 
        publicipaddress: "{{ publicipaddresses | json_query('publicipaddresses[0].ip_address')}}"  
    - name: print public ip
      debug:
