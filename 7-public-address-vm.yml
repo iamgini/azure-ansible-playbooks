@@ -11,4 +11,4 @@
     
    - name: print public ip
      debug:
-      msg: "{{output_ip_address.publicipaddresses.ip_address}}"
+      msg: "{{output_ip_address.publicipaddresses}}"
