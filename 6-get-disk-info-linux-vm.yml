@@ -1,6 +1,6 @@
 #find public ip and input it as value to hosts
 - name: Get Virtual Machine disk details Using Ansible
-  hosts: 20.219.4.80
+  hosts: "{{ansible_host}}"
   tasks:
   
    - name: Print the disk size only for sd disks
