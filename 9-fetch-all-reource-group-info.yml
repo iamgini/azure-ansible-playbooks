@@ -2,8 +2,10 @@
 - hosts: localhost
   gather_facts: false
   tasks:
-    - name: Get facts for all resource groups
-      azure_rm_resourcegroup_info:
-      register: group_array
-    - debug:
-        var: group_array
+    - name: Create a resource group
+      azure_rm_resourcegroup:
+       name: myResourceGroup
+       location: westus
+       tags:
+         testing: testing
+         delete: never
