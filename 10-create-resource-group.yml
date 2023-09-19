@@ -4,7 +4,7 @@
   tasks:
    - name: Create a Resource Group
      azure_rm_resourcegroup:
-        name: test1
+        name: mytest1
         location: centralindia
      register: rg
    - name: Display
