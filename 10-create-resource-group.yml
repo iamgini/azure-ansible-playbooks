@@ -3,10 +3,10 @@
   hosts: localhost
   tasks:
    - name: Create a Resource Group
-      azure_rm_resourcegroup:
+     azure_rm_resourcegroup:
         name: test1
         location: centralindia
-      register: rg
+     register: rg
    - name: Display
      debug:
        var: rg
