@@ -5,3 +5,5 @@
       azure_rm_virtualmachine_info:
         resource_group: myResourceGroup
       register: vm_info
+    - debug:
+         var: vm_info
