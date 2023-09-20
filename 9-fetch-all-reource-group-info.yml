@@ -6,5 +6,5 @@
       register: rg
     - name: Print
       debug:
-       msg: "{{rg|flatten}}"
+       var: rg.resourcegroups
       
