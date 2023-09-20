@@ -6,5 +6,5 @@
       register: rg
     - name: Print
       debug:
-       var: rg.resourcegroups['name[0]']
+       msg: "{{rg.resourcegroups | selectattr("type")}}"
       
