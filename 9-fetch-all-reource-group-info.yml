@@ -3,7 +3,7 @@
   tasks:
     - name: Get facts for all resource groups
       azure_rm_resourcegroup_info:
-      register: rg
+      register: resg
     - name: Print
       debug:
        var: rg.changed
