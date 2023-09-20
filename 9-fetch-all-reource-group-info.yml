@@ -6,5 +6,5 @@
       register: rg
     - name: Print
       debug:
-       var: rg.state.name
+       var: rg.resourcegroups['name']
       
