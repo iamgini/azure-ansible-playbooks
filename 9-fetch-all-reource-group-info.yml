@@ -3,9 +3,9 @@
   tasks:
     - name: Get facts for all resource groups
       azure_rm_resourcegroup_info:
-      register: resg
+      register: rg
     - name: Print
       debug:
-       var: rg.changed
+       #var: rg.changed
        #msg: "{{rg.resourcegroups | selectattr("type")}}"
-       #msg: "{{ rg.resourcegroups | map(attribute='name') }}"
+       msg: "{{ rg.resourcegroups | map(attribute='name') }}"
