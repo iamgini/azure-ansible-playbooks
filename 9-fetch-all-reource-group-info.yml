@@ -7,4 +7,4 @@
     - name: Print
       debug:
        msg: "{{rg.resourcegroups | selectattr("type")}}"
-      
+       msg: "{{rg.changed}}"
