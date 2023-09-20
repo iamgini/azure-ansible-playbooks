@@ -6,6 +6,6 @@
       register: rg
     - name: Print
       debug:
-       #var: rg.changed
+       var: rg.resourcegroups['name']
        #msg: "{{rg.resourcegroups | selectattr("type")}}"
-       msg: "{{ rg.resourcegroups | map(attribute='name') }}"
+       #msg: "{{ rg.resourcegroups | map(attribute='name') }}"
